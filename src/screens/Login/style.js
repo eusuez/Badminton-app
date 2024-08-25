@@ -5,34 +5,47 @@ export const estilo = StyleSheet.create({
         flex: 1,
         justifyContent: 'center'
     },
+    logo: {
+        flex: 1,
+        justifyContent: 'center'
+    },
     container:{
         flex: 1
     },
-    linearGradient: {
-        flex:1,
-        justifyContent: 'center',
-        textAlign:'center',
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 5
+    container2:{
+        justifyContent: 'center'
     },
-    buttonText: {
-        fontSize: 20,
-        fontFamily: 'Bold',
-        textAlign: 'center',
-        margin: 10,
-        color: '#ffffff',
-        backgroundColor: 'transparent'
+    linearGradient: {
+        alignSelf: 'center',
+        borderRadius: 35,
+        height: 43,
+        width: 300,
+        justifyContent: 'center',
+        top: 220
     },
     button: {
-        padding: 0,
-        alignItems: 'center',
-        textAlign: 'center',
-        borderRadius: 35,
         backgroundColor: 'transparent',
+        borderRadius: 35,
+        borderColor: 'transparent',
+        alignItems: 'center',
+        alignSelf: 'center',
         height: 45,
         width: 300,
-        alignSelf: "center",
-        top: 300
-    }
+        padding: 10
+    },
+    buttonText: {
+        fontWeight: 'bold',
+        alignItems: 'center',
+        color: 'white',
+        fontSize: 18,
+    },
+    titulo:{
+        fontWeight: 'bold',
+        alignItems: 'center',
+        color: 'white',
+        fontSize: 40,
+        textAlign: 'center',
+        top: 190
+    },
+    
 })
