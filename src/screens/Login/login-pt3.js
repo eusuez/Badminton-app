@@ -12,10 +12,7 @@ export const LoginPt3 = () => {
             resizeMode="cover" 
             style={estilo.background}> 
                 <View>
-                    <Image 
-                    source={'../../../assets/LOGO-BADBONS-BRANCO.png'}
-                    >       
-                    </Image>
+                    <Text>oi</Text>
                 </View>
                 <View>
                     <Text style={estilo.titulo}>APLICATIVO {'\n'}BADBONS</Text>
