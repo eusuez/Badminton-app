@@ -33,19 +33,7 @@ export const estilo = StyleSheet.create({
         width: 300,
         padding: 10
     },
-    buttonText: {
-        fontWeight: 'bold',
-        alignItems: 'center',
-        color: 'white',
-        fontSize: 18,
-    },
-    titulo:{
-        fontWeight: 'bold',
-        alignItems: 'center',
-        color: 'white',
-        fontSize: 40,
-        textAlign: 'center',
-        top: 190
-    },
+
     
 })
+

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo-google-fonts/baloo-tammudu-2": "^0.2.3",
+    "@expo-google-fonts/bebas-neue": "^0.2.3",
     "@expo-google-fonts/jost": "^0.2.3",
     "@expo/metro-runtime": "~3.2.3",
     "@react-navigation/bottom-tabs": "^6.6.1",
