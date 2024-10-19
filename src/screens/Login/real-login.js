@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { estilo } from "./style";
 import { useFonts, BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
 
-export const RealLogin = () =>{
+export const RealLogin = ({navigation}) =>{
     let [fontsLoaded] = useFonts({
         BebasNeue_400Regular,
       });
@@ -57,20 +57,20 @@ export const RealLogin = () =>{
         }
     })
     return(
-        
+
         <View style={estilo.overall}>
 
             <Text style={estilo.titulo}>LOGIN</Text>
             <TextInput placeholder="Email" style={estilo.entrada}></TextInput>
             <TextInput placeholder="Senha" style={estilo.entrada}></TextInput>
             <SafeAreaView style={{display:"flex", marginTop:"5rem"}}>
-                <LinearGradient 
-                start={{x: 0, y: 0}} 
-                end={{x: 1, y: 0}} 
-                colors={['#4376e6', '#0233a1']} 
+                <LinearGradient
+                start={{x: 0, y: 0}}
+                end={{x: 1, y: 0}}
+                colors={['#4376e6', '#0233a1']}
                 style={estilo.linearGradient}
                 >
-                    <TouchableOpacity style={estilo.button}>
+                    <TouchableOpacity style={estilo.button} onPress={()=>navigation.navigate("Home")}>
                         <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:"22px",fontFamily: 'BebasNeue_400Regular'}}>Entrar</Text>
                     </TouchableOpacity>
                 </LinearGradient>
