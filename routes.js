@@ -8,7 +8,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import TreinosScreen from './src/screens/Treinos/index.js';
 import DesafiosScreen from './src/screens/Desafios/index.js';
 import PerfilScreen from './src/screens/Perfil/index.js';
-import { Home } from './srcPt.2/screens/Home/home.js';
+import { Home } from './src/screens/Home/home.js';
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();

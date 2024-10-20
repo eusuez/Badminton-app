@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TextInput, ImageBackground, TouchableOpacity, SafeAreaView, StyleSheet} from "react-native";
+import { View, Text, TextInput, ImageBackground, TouchableOpacity, SafeAreaView, StyleSheet, Alert, Button} from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import { estilo } from "./style";
 import { useFonts, BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
@@ -8,6 +8,11 @@ export const RealLogin = ({navigation}) =>{
     let [fontsLoaded] = useFonts({
         BebasNeue_400Regular,
       });
+
+    const [email, onChangeEmail] = React.useState('');
+    const [senha, onChangeSenha] = React.useState('');
+
+
 
     let estilo = StyleSheet.create({
         overall:{
@@ -56,13 +61,21 @@ export const RealLogin = ({navigation}) =>{
 
         }
     })
+
+    const showAlert = () => {
+      alert(
+        "Sla mano"
+      );
+    };
+
+
     return(
 
         <View style={estilo.overall}>
 
             <Text style={estilo.titulo}>LOGIN</Text>
-            <TextInput placeholder="Email" style={estilo.entrada}></TextInput>
-            <TextInput placeholder="Senha" style={estilo.entrada}></TextInput>
+            <TextInput placeholder="Email" style={estilo.entrada} onChangeText={onChangeEmail} value={email}></TextInput>
+            <TextInput placeholder="Senha" style={estilo.entrada} onChangeText={onChangeSenha} value={senha}></TextInput>
             <SafeAreaView style={{display:"flex", marginTop:"5rem"}}>
                 <LinearGradient
                 start={{x: 0, y: 0}}
@@ -70,7 +83,14 @@ export const RealLogin = ({navigation}) =>{
                 colors={['#4376e6', '#0233a1']}
                 style={estilo.linearGradient}
                 >
-                    <TouchableOpacity style={estilo.button} onPress={()=>navigation.navigate("Home")}>
+                    <TouchableOpacity style={estilo.button} onPress={() => {
+                      if(email.toLowerCase() != "alexandre@gmail.com" || senha != "244466666"){
+                        showAlert()
+                      }else{
+                        navigation.navigate("Home")
+                      }
+
+                    }}>
                         <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:"22px",fontFamily: 'BebasNeue_400Regular'}}>Entrar</Text>
                     </TouchableOpacity>
                 </LinearGradient>
@@ -78,3 +98,5 @@ export const RealLogin = ({navigation}) =>{
         </View>
     )
 }
+
+
