@@ -16,7 +16,7 @@ export default function DesafiosScreen() {
     }, [navigation]);
     return (
         <ScrollView contentContainerStyle={estilo.container}>
-            <Text style={estilo.font}>!!!!!!!!!!!OLHA AI CARALHO!!!!!!!!!!</Text>
+            <Text style={estilo.font}>Desafios</Text>
         </ScrollView>
     );
 }

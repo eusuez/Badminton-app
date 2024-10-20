@@ -6,7 +6,7 @@ import { estilo } from "../style";
 export default function PerfilScreen() {
     return (
         <ScrollView contentContainerStyle={estilo.container}>
-            <Text style={estilo.font}>!!!!!!!!!!!OLHA AI CARALHO!!!!!!!!!!</Text>
+            <Text style={estilo.font}>Perfil</Text>
         </ScrollView>
     );
 }

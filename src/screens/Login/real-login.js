@@ -64,7 +64,7 @@ export const RealLogin = ({navigation}) =>{
 
     const showAlert = () => {
       alert(
-        "Sla mano"
+        "Usuário ou Senha incorreto"
       );
     };
 

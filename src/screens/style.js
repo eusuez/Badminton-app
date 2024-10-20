@@ -5,6 +5,8 @@ export const estilo = StyleSheet.create({
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundColor:"rgb(28,28,30)",
+            color:"rgb(144,144,144)"
         },
         background: {
             backgroundColor: '#1c1c1e',
@@ -47,6 +49,9 @@ export const estilo = StyleSheet.create({
         },
         iconBell:{
             padding: 15,
+        },
+        font:{
+          color:"rgb(144,144,144)",
         }
-        
+
 })
