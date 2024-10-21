@@ -2,11 +2,15 @@
   "name": "badminton",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build": "tsup src"
   },
   "dependencies": {
     "@expo-google-fonts/baloo-tammudu-2": "^0.2.3",
@@ -18,8 +22,10 @@
     "@react-navigation/material-bottom-tabs": "^6.2.29",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.11.0",
-    "expo": "~51.0.28",
-    "expo-image": "^1.12.15",
+    "@types/react": "~18.2.79",
+    "badminton": "file:",
+    "expo": "^51.0.38",
+    "expo-image": "^1.13.0",
     "expo-linear-gradient": "~13.0.2",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
@@ -33,7 +39,11 @@
     "react-native-web": "~0.19.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@types/node": "^22.7.7",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.3.3"
   },
   "private": true
 }
