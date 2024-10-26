@@ -31,13 +31,13 @@ export const RealLogin = ({navigation}) =>{
         entrada:{
             color:"white",
             borderBottomColor:"white",
-            borderBottomWidth:"1px",
-            paddingBottom:"7px",
-            paddingTop:"7px",
-            paddingRight:"100px",
-            paddingLeft:"10px",
+            borderBottomWidth:1,
+            paddingBottom:7,
+            paddingTop:7,
+            paddingRight:100,
+            paddingLeft:10,
             fontSize:17,
-            marginBottom:"40px",
+            marginBottom:40,
         },
 
         linearGradient: {
