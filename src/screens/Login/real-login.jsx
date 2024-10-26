@@ -25,8 +25,8 @@ export const RealLogin = ({navigation}) =>{
         titulo:{
             color:"white",
             fontWeight:"bold",
-            fontSize:"30px",
-            marginBottom:"50px",
+            fontSize:30,
+            marginBottom:50,
         },
         entrada:{
             color:"white",
@@ -36,7 +36,7 @@ export const RealLogin = ({navigation}) =>{
             paddingTop:"7px",
             paddingRight:"100px",
             paddingLeft:"10px",
-            fontSize:"17px",
+            fontSize:17,
             marginBottom:"40px",
         },
 
@@ -91,7 +91,7 @@ export const RealLogin = ({navigation}) =>{
                       }
 
                     }}>
-                        <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:"22px",fontFamily: 'BebasNeue_400Regular'}}>Entrar</Text>
+                        <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:22,fontFamily: 'BebasNeue_400Regular'}}>Entrar</Text>
                     </TouchableOpacity>
                 </LinearGradient>
             </SafeAreaView>

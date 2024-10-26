@@ -13,10 +13,10 @@ export const LoginPt3 = () => {
 
     return(
         <View style={estilo.container}>
-            <ImageBackground 
+            <ImageBackground
             source={'../../../assets/WhatsApp Image 2024-08-25 at 16.11.54.jpeg'}
-            resizeMode="cover" 
-            style={estilo.background}> 
+            resizeMode="cover"
+            style={estilo.background}>
                 <View>
                     <Text>oi</Text>
                 </View>
@@ -24,14 +24,14 @@ export const LoginPt3 = () => {
                     <Text style={{fontWeight:"bold", alignItems:"center",color:"white",fontSize:40,textAlign:"center",top:190,fontFamily: 'BebasNeue_400Regular',}}>APLICATIVO {'\n'}BADBONS</Text>
                 </View>
                 <SafeAreaView style={estilo.container2}>
-                    <LinearGradient 
-                    start={{x: 0, y: 0}} 
-                    end={{x: 1, y: 0}} 
-                    colors={['#4376e6', '#0233a1']} 
+                    <LinearGradient
+                    start={{x: 0, y: 0}}
+                    end={{x: 1, y: 0}}
+                    colors={['#4376e6', '#0233a1']}
                     style={estilo.linearGradient}
                     >
                         <TouchableOpacity style={estilo.button}>
-                            <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:"22px",fontFamily: 'BebasNeue_400Regular'}}>Inicie seus treinos</Text>
+                            <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:22,fontFamily: 'BebasNeue_400Regular'}}>Inicie seus treinos</Text>
                         </TouchableOpacity>
                     </LinearGradient>
                 </SafeAreaView>
