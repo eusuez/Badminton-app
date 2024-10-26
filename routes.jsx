@@ -1,14 +1,14 @@
 import React from 'react';
-import { LoginPt3 } from './src/screens/Login/login-pt3.js';
-import { RealLogin } from './src/screens/Login/real-login.js';
+import { LoginPt3 } from './src/screens/Login/login-pt3.jsx';
+import { RealLogin } from './src/screens/Login/real-login.jsx';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome5.js';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import TreinosScreen from './src/screens/Treinos/index.js';
-import DesafiosScreen from './src/screens/Desafios/index.js';
-import PerfilScreen from './src/screens/Perfil/index.js';
-import { Home } from './src/screens/Home/home.js';
+import TreinosScreen from './src/screens/Treinos/index.jsx';
+import DesafiosScreen from './src/screens/Desafios/index.jsx';
+import PerfilScreen from './src/screens/Perfil/index.jsx';
+import { Home } from './src/screens/Home/home.jsx';
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
