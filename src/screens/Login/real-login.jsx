@@ -57,7 +57,7 @@ export const RealLogin = ({navigation}) =>{
             alignSelf: 'center',
             height: 45,
             width: 300,
-            padding: 10,
+            padding: 6,
 
         }
     })
