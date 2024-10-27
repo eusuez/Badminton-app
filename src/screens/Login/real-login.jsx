@@ -34,8 +34,8 @@ export const RealLogin = ({navigation}) =>{
             borderBottomWidth:1,
             paddingBottom:7,
             paddingTop:7,
-            paddingRight:100,
-            paddingLeft:10,
+            paddingRight:50,
+            paddingLeft:50,
             fontSize:17,
             marginBottom:40,
         },
@@ -74,8 +74,8 @@ export const RealLogin = ({navigation}) =>{
         <View style={estilo.overall}>
 
             <Text style={estilo.titulo}>LOGIN</Text>
-            <TextInput placeholder="Email" style={estilo.entrada} onChangeText={onChangeEmail} value={email}></TextInput>
-            <TextInput placeholder="Senha" style={estilo.entrada} onChangeText={onChangeSenha} value={senha}></TextInput>
+            <TextInput placeholder="Email" placeholderTextColor="#FFF" style={estilo.entrada} onChangeText={onChangeEmail} value={email}></TextInput>
+            <TextInput placeholder="Senha" placeholderTextColor="#FFF" style={estilo.entrada} onChangeText={onChangeSenha} value={senha}></TextInput>
             <SafeAreaView style={{display:"flex", marginTop:"5rem"}}>
                 <LinearGradient
                 start={{x: 0, y: 0}}
@@ -87,7 +87,7 @@ export const RealLogin = ({navigation}) =>{
                       if(email.toLowerCase() != "alexandre@gmail.com" || senha != "244466666"){
                         showAlert()
                       }else{
-                        navigation.navigate("Home")
+                        navigation.navigate("Homee")//coloquei 2 "e" porque eu tava recebendo um Warning pq eu tinha outra coisa com o nome "Home"
                       }
 
                     }}>

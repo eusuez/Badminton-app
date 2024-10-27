@@ -76,7 +76,7 @@ export const StackNavigate = () =>{
             />
 
             <Stack.Screen
-            name="Home"
+            name="Homee"
             component={ TabNavigate }
             options={{
               headerShown:false
