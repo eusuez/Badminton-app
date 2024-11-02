@@ -3,14 +3,8 @@ import { View, Text, ImageBackground, TouchableOpacity, SafeAreaView} from "reac
 import { LinearGradient } from 'expo-linear-gradient';
 import { estilo } from "./style";
 import { Image } from "expo-image";
-import { useFonts, BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
 
-export const LoginPt3 = () => {
-    let [fontsLoaded] = useFonts({
-        BebasNeue_400Regular,
-      });
-
-
+export const Criarconta01 = () => {
     return(
         <View style={estilo.container}>
             <ImageBackground 
@@ -18,20 +12,17 @@ export const LoginPt3 = () => {
             resizeMode="cover" 
             style={estilo.background}> 
                 <View>
-                    <Text>oi</Text>
-                </View>
-                <View>
-                    <Text style={{fontWeight:"bold", alignItems:"center",color:"white",fontSize:40,textAlign:"center",top:190,fontFamily: 'BebasNeue_400Regular',}}>APLICATIVO {'\n'}BADBONS</Text>
+                    <Text style={estilo.titulo}>APLICATIVO {'\n'}BADBONS</Text>
                 </View>
                 <SafeAreaView style={estilo.container2}>
                     <LinearGradient 
                     start={{x: 0, y: 0}} 
                     end={{x: 1, y: 0}} 
                     colors={['#4376e6', '#0233a1']} 
-                    style={estilo.linearGradient}
+                    style={estilo.linearGradientButton}
                     >
                         <TouchableOpacity style={estilo.button}>
-                            <Text style={{fontWeight:"bold",alignItems:"center",color:"white",fontSize:"22px",fontFamily: 'BebasNeue_400Regular'}}>Inicie seus treinos</Text>
+                            <Text style={estilo.buttonText}>Inicie seus treinos</Text>
                         </TouchableOpacity>
                     </LinearGradient>
                 </SafeAreaView>

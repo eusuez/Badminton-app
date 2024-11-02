@@ -1,1 +1,2 @@
-vampeta
+NPM install -D typescript @types/node tsx tsup
+"target": "es2020"
